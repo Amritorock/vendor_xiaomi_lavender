@@ -29068,6 +29068,58 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libts_detected_face_hal",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libts_detected_face_hal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libstdc++_vendor",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libts_face_beautify_hal",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libts_face_beautify_hal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv2",
+                "libEGL",
+                "libstdc++_vendor",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvideoutils",
     owner: "xiaomi",
     strip: {
@@ -37465,10 +37517,23 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/system_ext/lib64/libqxrsplitauxservice.qti.so",
             ],
+            shared_libs: [
+                "libwfdservice_shim",
+                "libaudioclient_shim",
+                "libutils",
+                "libcutils",
+                "libaudioclient",
+                "libaudiofoundation",
+                "audioclient-types-aidl-cpp",
+                "android.media.audio.common.types-V4-cpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     system_ext_specific: true,
 }

@@ -1214,6 +1214,8 @@ PRODUCT_PACKAGES += \
     libsurround_3mic_proc \
     libsymphony-cpu \
     libsymphonypower \
+    libts_detected_face_hal \
+    libts_face_beautify_hal \
     libvideoutils \
     libvidhance \
     libvidhance_gyro \
