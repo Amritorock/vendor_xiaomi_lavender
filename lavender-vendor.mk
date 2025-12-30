@@ -1221,7 +1221,6 @@ PRODUCT_PACKAGES += \
     libvidhance_gyro \
     libdirac \
     libmisoundfx \
-    libspatialaudio \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0_vendor \
     com.qualcomm.qti.imscmservice@2.1_vendor \
